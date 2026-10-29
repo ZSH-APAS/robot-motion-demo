@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="三段机器人运动能力 Demo：感知行走、舞蹈倒地自恢复与足球射门。" />
+  <title>Demo Motion Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Demo Motion Lab 首页">
+      <span class="brand-mark"></span>
+      <span>MOTION / LAB</span>
+    </a>
+    <div class="top-meta"><span>03 DEMOS</span><span class="live-dot"></span><span>ONLINE</span></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">EMBODIED INTELLIGENCE · MOTION STUDIES</div>
+      <h1>让动作<br /><span>成为语言。</span></h1>
+      <div class="hero-bottom">
+        <p>三个片段，三种能力。<br />从稳定感知，到动态恢复，再到精准控制。</p>
+        <a class="round-link" href="#showcase" aria-label="向下浏览视频">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0 6-6m-6 6-6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <article class="demo-card active" data-index="0">
+        <div class="video-shell">
+          <video src="perception-walk.mp4" muted loop playsinline preload="metadata"></video>
+          <button class="play-btn" type="button" aria-label="播放感知行走视频">
+            <span class="play-icon"></span><span class="play-label">PLAY FILM</span>
+          </button>
+          <div class="video-hud"><span>DEMO_01</span><span>PERCEPTION / LOCOMOTION</span></div>
+        </div>
+        <div class="card-copy">
+          <div class="number">01</div>
+          <div><h2>感知行走</h2><p>在持续变化的环境中感知、判断与前进，让每一步都建立在实时反馈之上。</p></div>
+          <div class="tags"><span>PERCEPTION</span><span>LOCOMOTION</span></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-index="1">
+        <div class="video-shell">
+          <video src="dance-recovery.mp4" muted loop playsinline preload="metadata"></video>
+          <button class="play-btn" type="button" aria-label="播放舞蹈倒地自恢复视频">
+            <span class="play-icon"></span><span class="play-label">PLAY FILM</span>
+          </button>
+          <div class="video-hud"><span>DEMO_02</span><span>BALANCE / RECOVERY</span></div>
+        </div>
+        <div class="card-copy">
+          <div class="number">02</div>
+          <div><h2>舞蹈倒地自恢复</h2><p>从高动态舞蹈到意外倒地，再自主完成姿态重建，展现完整的平衡与恢复链路。</p></div>
+          <div class="tags"><span>BALANCE</span><span>RECOVERY</span></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-index="2">
+        <div class="video-shell">
+          <video src="football-kick.mp4" muted loop playsinline preload="metadata"></video>
+          <button class="play-btn" type="button" aria-label="播放足球射门视频">
+            <span class="play-icon"></span><span class="play-label">PLAY FILM</span>
+          </button>
+          <div class="video-hud"><span>DEMO_03</span><span>TIMING / CONTROL</span></div>
+        </div>
+        <div class="card-copy">
+          <div class="number">03</div>
+          <div><h2>足球射门</h2><p>观察目标、调整重心、完成触球——把时机判断和全身控制浓缩在一次射门里。</p></div>
+          <div class="tags"><span>TIMING</span><span>CONTROL</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">END OF SEQUENCE</p>
+      <h2>MOVE.<br /><span>ADAPT.</span><br />REPEAT.</h2>
+      <a href="#top">BACK TO TOP <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>© 2026 MOTION LAB</span><span>03 MOTION STUDIES</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
